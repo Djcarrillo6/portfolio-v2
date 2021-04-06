@@ -35,14 +35,14 @@
   align-items: center;
 }
 
-.circle {
+.square {
   width: 10px;
   height: 10px;
  background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #000000 38%, #ee07ee 50%, #f5f2f2 62%, #02d5fa 75%, #000000 87%, #000000 100%);
   background-size: 400% 400%;
   animation: gradient 2.5s ease infinite;
 }
-.circle2 {
+.square2 {
   width: 10px;
   height: 10px;
  background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #000000 38%, #f5f2f2 50%, #ee07ee 62%, #02d5fa 75%, #000000 87%, #000000 100%);
@@ -53,6 +53,7 @@
 .text {
   background-color: black;
   color: whitesmoke;
+  font-size: 25px;
 }
 
 .projectsHeader {

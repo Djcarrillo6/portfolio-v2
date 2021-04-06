@@ -1,0 +1,18 @@
+.myrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardwidth {
+  width: 25rem;
+  border:  5px solid silver;
+}
+
+.myrow2 {
+  display: flex;
+  justify-content: left;
+  margin-left: 11.25rem;
+  margin-top: 2.5rem;
+}
