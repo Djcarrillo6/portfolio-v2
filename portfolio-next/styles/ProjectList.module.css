@@ -3,16 +3,22 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 3.5rem;
 }
 
 .cardwidth {
   width: 25rem;
-  border:  5px solid silver;
+  border:  2.5px solid purple;
 }
 
 .myrow2 {
   display: flex;
   justify-content: left;
   margin-left: 11.25rem;
-  margin-top: 2.5rem;
+  margin-top: 2.75rem;
+  padding-bottom: 3rem;
+}
+
+.galleryContainer {
+  background-color: silver;
 }

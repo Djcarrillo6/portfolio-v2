@@ -62,5 +62,7 @@
   align-self: center;
   color: whitesmoke;
   background-color: #000000;
-
+  font-size: 30px;
+  margin-bottom: 0;
+  padding-bottom: 5rem;
 }

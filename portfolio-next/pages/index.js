@@ -36,12 +36,12 @@ export default function Home() {
           <div className={styles.square} ></div>
           <div className={styles.square2} ></div>
 
-        <p className={styles.text} >Software Engineer. Mixologist. Micro-Economist.</p>
+        <p className={styles.text} >Software Engineer. Micro-Economist. Mixologist.</p>
         </div>
 
         <div className={styles.animatedGradientContainer}>
 
-        <p className={styles.text} >"To improve is to change; to be perfect is to change often.    --W.Churchill 1944"</p>
+        <p className={styles.text} >"To improve is to change; to be perfect is to change often.  --W.Churchill 1944"</p>
           <div className={styles.square} ></div>
           <div className={styles.square2} ></div>
           <div className={styles.square} ></div>
@@ -68,7 +68,7 @@ export default function Home() {
           <div className={styles.square2} ></div>
         </div>
 
-        <p className={styles.projectsHeader} >Projects</p>
+        <p className={styles.projectsHeader} >Project Gallery</p>
         <ProjectList />
 
 
