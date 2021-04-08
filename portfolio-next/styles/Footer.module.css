@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap');
+
+.footerContainer {
+  background-color: rgb(67, 1, 70);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10rem;
+}
+
+.iconContainer {
+  display: block;  
+  margin-top: 1.5rem;
+  margin-left: 7rem;
+}
+
+.mr {
+  margin-right: 1rem;
+}
+
+.footerHeader {
+  width: 25%;
+  margin-top: 1rem;
+}
+
+.footerTextStyles {
+  color: whitesmoke;
+  font-family: 'JetBrains Mono', monospace;
+  margin-left: 2.5rem;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+
+}
