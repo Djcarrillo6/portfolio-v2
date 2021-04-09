@@ -2,20 +2,47 @@ import Head from 'next/head'
 import NavBar from './components/NavBar';
 import ProjectList from './components/ProjectList';
 import Footer from './components/Footer';
+import ContactForm from './components/ContactForm';
 import styles from '../styles/Home.module.css'
 
-import { FontAwesome } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {FaTwitter} from "react-icons/fa"
-import {IconContext} from "react-icons"
+import Image from 'next/image'
+import nodeIcon from '../public/nodejs-brands.svg';
+import jsIcon from '../public/js-brands.svg'
+import pythonIcon from '../public/python-brands.svg';
+import javaIcon from '../public/java-brands.svg';
+import reactIcon from '../public/react-brands.svg';
+import expressIcon from '../public/express-109.svg';
+import angularIcon from '../public/angular.svg';
+import awsIcon from '../public/aws-2.svg';
+import bootstrapIcon from '../public/bootstrap-5.svg';
+import djangoIcon from '../public/django-community.svg';
+import firebaseIcon from '../public/firebase-1.svg';
+import googleCldIcon from '../public/google-cloud-3.svg';
+import herokuIcon from '../public/heroku-1.svg';
+import azureIcon from '../public/microsoft-azure-2.svg';
+import mongoDbIcon from '../public/mongodb.svg';
+import mysqlIcon from '../public/mysql-5.svg';
+import nextjsIcon from '../public/nextjs-3.svg';
+import npmIcon from '../public/npm.svg';
+import nginxIcon from '../public/nginx-1.svg';
+import reactNatvIcon from '../public/react-native-firebase-1.svg';
+import reduxIcon from '../public/redux.svg';
+import springBootIcon from '../public/spring-14.svg';
+import typeScrtIcon from '../public/typescript.svg';
+import ubuntuIcon from '../public/ubuntu-2.svg';
+import linuxIcon from '../public/linux.svg';
 
 export default function Home() {
  
   return (
     <>
     <div className={styles.container}>
+      <Head>
+        <title>Dj's Portfolio</title>
+        {/* Keyword selection to match technical skill section */}
+        <meta name='keywords' content='' />
+      </Head>
         < NavBar />
-
         <div className={styles.animatedGradientContainer}>
           <p className={styles.text} >Hi I'm DJ. I design & build web and mobile apps.
           </p>
@@ -43,7 +70,7 @@ export default function Home() {
           <div className={styles.square} ></div>
           <div className={styles.square2} ></div>
 
-        <p className={styles.text} >Software Engineer. Micro-Economist. Mixologist.</p>
+        <p className={styles.text} >Software Engineer. Former Hospitality Professional. Mixologist.</p>
         </div>
 
         <div className={styles.animatedGradientContainer}>
@@ -78,7 +105,6 @@ export default function Home() {
         <p className={styles.sectionHeader} >Project Gallery</p>
         <ProjectList />
 
-
         <div className={styles.animatedGradientContainer}>
           <div className={styles.square} ></div>
           <div className={styles.square2} ></div>
@@ -92,16 +118,156 @@ export default function Home() {
           <div className={styles.square2} ></div>
         </div>
 
-        <p className={styles.sectionHeader} >Technical Skill Set Gallery</p>
-
+        <p className={styles.sectionHeader} >Favorite Technologies</p>
         <div className={styles.skillGallery}>
-        <IconContext.Provider >
-          <div>
+            <div className={styles.iconRow2}>
+              <Image src={pythonIcon}
+                alt="Python"
+                width={75}
+                height={75}
+                />
+                <Image src={typeScrtIcon}
+                alt="Typescript"
+                width={50}
+                height={50}
+                />
+                <Image src={jsIcon}
+                alt="JavaScript"
+                width={175}
+                height={175}
+                />
 
-          </div>
-        </IconContext.Provider>
+              <Image src={djangoIcon}
+                alt="Django"
+                width={125}
+                height={125}
+                />
+            </div>
+
+            <div className={styles.iconRow3}>
+                <Image src={nodeIcon}
+                alt="Nodejs"
+                width={380}
+                height={280}
+                />
+                <Image src={reactIcon}
+                alt="React"
+                width={275}
+                height={275}
+                />
+
+            <div className={styles.column1}>
+                  <Image src={angularIcon}
+                  alt="Angularjs"
+                  width={175}
+                  height={115}
+                  />
+                  <Image src={reduxIcon}
+                  alt="Redux"
+                  width={85}
+                  height={85}
+                  />
+            </div>
+                <div className={styles.column2}>
+                      <Image src={reactNatvIcon}
+                      alt="React Native"
+                      width={95}
+                      height={95}
+                      />
+                      <Image src={npmIcon}
+                      alt="NPM"
+                      width={200}
+                      height={100}
+                      className={styles.npmI}
+                      />
+                </div>
+              <Image src={nextjsIcon}
+                alt="Nextjs"
+                width={150}
+                height={150}
+                />
+            </div>
+
+            <div className={styles.iconRow4}>
+                <Image src={herokuIcon}
+                alt="Heroku"
+                width={100}
+                height={100}
+                />
+
+                <Image src={awsIcon}
+                alt="AWS"
+                width={100}
+                height={100}
+                />
+
+              <Image src={googleCldIcon}
+                alt="Google Cloud"
+                width={115}
+                height={115}
+                />
+
+              <Image src={azureIcon}
+                alt="Azure Cloud"
+                width={115}
+                height={115}
+                />
+
+                <Image src={firebaseIcon}
+                alt="Firebase"
+                width={75}
+                height={75}
+                />
+            </div>
+
+            <div className={styles.iconRow5}>
+                <Image src={springBootIcon}
+                alt="SpringBoot"
+                width={110}
+                height={110}
+                /> 
+                <Image src={javaIcon}
+                alt="Java"
+                width={105}
+                height={105}
+                />
+                <Image src={linuxIcon}
+                alt="Linux"
+                width={75}
+                height={75}
+                />
+            </div>
+
+
+            <div className={styles.iconRow6}>
+                <Image src={mongoDbIcon}
+                alt="MongoDB"
+                width={300}
+                height={175}
+                className={styles.mongStyles}
+                />
+
+                <Image src={mysqlIcon}
+                alt="MySQL"
+                width={80}
+                height={80}
+                />
+            </div>
 
         </div>
+
+        {/* <div className={styles.animatedGradientContainer}>
+          <div className={styles.square} ></div>
+          <div className={styles.square2} ></div>
+          <div className={styles.square} ></div>
+          <div className={styles.square2} ></div>
+          <div className={styles.square} ></div>
+          <div className={styles.square2} ></div>
+          <div className={styles.square} ></div>
+          <div className={styles.square2} ></div>
+          <div className={styles.square} ></div>
+          <div className={styles.square2} ></div>
+        </div> */}
 
         <div className={styles.animatedGradientContainer}>
           <div className={styles.square} ></div>
@@ -116,20 +282,8 @@ export default function Home() {
           <div className={styles.square2} ></div>
         </div>
 
-        <div className={styles.animatedGradientContainer}>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-        </div>
-
-        <p className={styles.sectionHeader} >Connect</p>        
+        <p className={styles.sectionHeader} >Let's Connect</p>
+        <ContactForm/>        
 
         <div className={styles.animatedGradientContainer}>
           <div className={styles.square} ></div>
