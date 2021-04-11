@@ -1,24 +1,35 @@
 .myrow {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content:space-evenly;
+  align-items: baseline;
   padding-top: 3.5rem;
+}
+
+.blackBorder {
+  border: 20px solid black;
+  border-radius: 5px;
 }
 
 .cardwidth {
   width: 25rem;
-  border:  2.5px solid purple;
+  height: 45rem;
+  border:  10px solid rgb(10, 2, 56);
 }
 
 .myrow2 {
   display: flex;
   justify-content: left;
-  margin-left: 11.25rem;
+  margin-left: 9rem;
   margin-top: 2.75rem;
   padding-bottom: 3rem;
 }
 
 .galleryContainer {
   background-color: silver;
+}
+
+.cardLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

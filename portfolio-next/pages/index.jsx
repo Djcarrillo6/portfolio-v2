@@ -11,10 +11,8 @@ import jsIcon from '../public/js-brands.svg'
 import pythonIcon from '../public/python-brands.svg';
 import javaIcon from '../public/java-brands.svg';
 import reactIcon from '../public/react-brands.svg';
-import expressIcon from '../public/express-109.svg';
 import angularIcon from '../public/angular.svg';
 import awsIcon from '../public/aws-2.svg';
-import bootstrapIcon from '../public/bootstrap-5.svg';
 import djangoIcon from '../public/django-community.svg';
 import firebaseIcon from '../public/firebase-1.svg';
 import googleCldIcon from '../public/google-cloud-3.svg';
@@ -24,12 +22,10 @@ import mongoDbIcon from '../public/mongodb.svg';
 import mysqlIcon from '../public/mysql-5.svg';
 import nextjsIcon from '../public/nextjs-3.svg';
 import npmIcon from '../public/npm.svg';
-import nginxIcon from '../public/nginx-1.svg';
 import reactNatvIcon from '../public/react-native-firebase-1.svg';
 import reduxIcon from '../public/redux.svg';
 import springBootIcon from '../public/spring-14.svg';
 import typeScrtIcon from '../public/typescript.svg';
-import ubuntuIcon from '../public/ubuntu-2.svg';
 import linuxIcon from '../public/linux.svg';
 
 export default function Home() {
@@ -102,8 +98,10 @@ export default function Home() {
           <div className={styles.square2} ></div>
         </div>
 
-        <p className={styles.sectionHeader} >Project Gallery</p>
-        <ProjectList />
+        <section id="projectGallery">
+          <p className={styles.sectionHeader}>Project Gallery</p>
+          <ProjectList />
+        </section>
 
         <div className={styles.animatedGradientContainer}>
           <div className={styles.square} ></div>
@@ -256,19 +254,6 @@ export default function Home() {
 
         </div>
 
-        {/* <div className={styles.animatedGradientContainer}>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-        </div> */}
-
         <div className={styles.animatedGradientContainer}>
           <div className={styles.square} ></div>
           <div className={styles.square2} ></div>
@@ -282,21 +267,8 @@ export default function Home() {
           <div className={styles.square2} ></div>
         </div>
 
-        <p className={styles.sectionHeader} >Let's Connect</p>
+        <p className={styles.sectionHeader2} >Have an idea you would like to develop? Let's connect.</p>
         <ContactForm/>        
-
-        <div className={styles.animatedGradientContainer}>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-          <div className={styles.square} ></div>
-          <div className={styles.square2} ></div>
-        </div>
 
         <div className={styles.animatedGradientContainer}>
           <div className={styles.square} ></div>

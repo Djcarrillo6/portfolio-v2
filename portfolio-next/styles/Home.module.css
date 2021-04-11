@@ -38,9 +38,9 @@
 .square {
   width: 15px;
   height: 15px;
- background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #000000 38%, #ee07ee 50%, #f5f2f2 62%, #02d5fa 75%, #000000 87%, #000000 100%);
+ background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #000000 38%, #ee07ee 50%, #f5f2f2 62%, #02d5fa 75%, #000000 87%, #000000 95%, #000000 100%);
   background-size: 400% 400%;
-  animation: gradient 9.5s ease infinite;
+  animation: gradient 10.5s ease infinite;
 
 }
 .square2 {
@@ -66,13 +66,26 @@
   background-color: #000000;
   font-size: 30px;
   margin-bottom: 0;
+  padding-bottom: .5rem;
+  text-decoration: underline;
+}
+
+.sectionHeader2 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: whitesmoke;
+  background-color: #000000;
+  font-size: 30px;
+  margin-bottom: 0;
   padding-bottom: 5rem;
 }
 
 .skillGallery {
   width: 100%;
-  height: 53rem; 
-  background-color: rgb(53, 18, 58);
+  height: 55rem;
+  padding-top: 3rem; 
+  background-color: rgb(10, 2, 56);
 }
 
 .iconRow2 {
