@@ -1,6 +1,6 @@
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import styles from '../../styles/dj6notebook.module.css';
+import styles from '../../styles/project-details-styles.module.css';
 
 const  dj6notebook = () => {
   return (

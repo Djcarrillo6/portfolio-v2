@@ -32,14 +32,15 @@ export default function Home() {
  
   return (
     <>
-    <div className={styles.container}>
       <Head>
         <title>Dj's Portfolio</title>
         {/* Keyword selection to match technical skill section */}
         <meta name='keywords' content='' />
       </Head>
+      
+      <div className={styles.container}>
         < NavBar />
-        <div className={styles.animatedGradientContainer}>
+        <div id="home" className={styles.animatedGradientContainer}>
           <p className={styles.text} >Hi I'm DJ. I design & build web and mobile apps.
           </p>
           <div className={styles.square} ></div>
@@ -267,7 +268,7 @@ export default function Home() {
           <div className={styles.square2} ></div>
         </div>
 
-        <p className={styles.sectionHeader2} >Have an idea you would like to develop? Let's connect.</p>
+        <p className={styles.sectionHeader2} id="contact-form" >Have an idea you would like to develop? Let's connect.</p>
         <ContactForm/>        
 
         <div className={styles.animatedGradientContainer}>
