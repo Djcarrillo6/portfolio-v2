@@ -16,7 +16,7 @@ const  dj6notebook = () => {
           <h5 className={styles.sectionHeaderText} >Project Description:</h5> 
           <p className={styles.text} >I created this web application as an NPM module, which is publically avaiable for use <a style={{textDecoration: 'underline', color: 'purple'}}  href="https://www.npmjs.com/packages/jsnote-dj6">here.</a> This NPM module is a CLI to launch an interactive development environment inside a user's browser, for writing, executing, and documenting code.</p>
 
-                <div className="col">
+                <div className="col" style={{marginTop: '.5rem'}} >
                   <h5 className={styles.sectionHeaderText}>Technologies Used:</h5>
                   <ul className={styles.text}>
                     <li>React.js</li>
@@ -29,7 +29,7 @@ const  dj6notebook = () => {
 
           <h5 className={styles.sectionHeaderText}>Project Key Notes:</h5>
           
-          <h6 style={{marginLeft: '1.5rem'}} >Hijacking ESBuild</h6>
+          <h6 style={{marginLeft: '1.5rem', marginTop: '1rem'}} >Hijacking ESBuild</h6>
           <ul className={styles.text} >
                 <li>In order to safely execute a user's provided JavaScript code inside their browser, I customized the traditional ESBuild process with a unqiue plugin that performs a very specific role.
                 </li>

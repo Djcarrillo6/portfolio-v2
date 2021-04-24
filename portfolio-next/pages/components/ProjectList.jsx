@@ -5,8 +5,7 @@ const ProjectList = () => {
   return (
     <>  
   <div className={styles.galleryContainer}>
-    <div className={styles.myrow}>
-
+    <div className={styles.myRow}>
       <div className={styles.blackBorder}>
         <div className="card" className={styles.cardwidth}>
           <Image className="card-img-top"
@@ -91,7 +90,7 @@ const ProjectList = () => {
 
 
     </div>
-      <div className={styles.myrow2}>
+      <div className={styles.myRow2}>
 
         <div className={styles.blackBorder}>
           <div className="card" className={styles.cardwidth}>

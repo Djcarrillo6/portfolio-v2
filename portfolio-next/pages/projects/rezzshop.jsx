@@ -28,7 +28,7 @@ export default function rezzshop() {
 
           <h5 className={styles.sectionHeaderText}>Project Key Notes:</h5>
           
-          <h6 style={{marginLeft: '1.5rem'}} >Node.js & Express.js RESTful API</h6>
+          <h6 style={{marginLeft: '1.5rem', marginTop: '1rem'}} >Node.js & Express.js RESTful API</h6>
           <ul className={styles.text} >
                 <li>Used Node.js + Express.js, along with a series of middleware functions, to create & expose a RESTful API.
                 </li>

@@ -9,9 +9,10 @@
 }
 
 .iconContainer {
-  display: block;  
+  display: flex;  
+  justify-content: center;
+  align-items: center;
   margin-top: 1.5rem;
-  margin-left: 7rem;
 }
 
 .mr {
@@ -26,11 +27,11 @@
 .footerTextStyles {
   color: whitesmoke;
   font-family: 'JetBrains Mono', monospace;
-  margin-left: 2.5rem;
+  margin-left: 4.5rem;
 }
 
 .footerWrapper {
   display: flex;
   justify-content: center;
-
+  margin-left: 6rem;
 }

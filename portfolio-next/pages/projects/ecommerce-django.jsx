@@ -8,7 +8,6 @@ export default function ecommerceDjango() {
     <>
     <NavBar />
     <div className={styles.mainContainer} >
-        
         <div className={styles.headerContainer}>
           <h5 className={styles.sectionHeaderText} >Project Name:</h5> 
           <p className={styles.text} >E-Commerce Website</p>
@@ -28,7 +27,7 @@ export default function ecommerceDjango() {
 
           <h5 className={styles.sectionHeaderText}>Project Key Notes:</h5>
           
-          <h6 style={{marginLeft: '1.5rem'}} >Python & Django Backend</h6>
+          <h6 style={{marginLeft: '1.5rem', marginTop: '1rem'}} >Python & Django Backend</h6>
           <ul className={styles.text} >
                 <li>Constructed a Django back-end component to catalogue all sales products, and connected the store's database to a front-end user search tool, giving user quick searching ability while they shop.
                 </li>

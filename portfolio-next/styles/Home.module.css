@@ -7,6 +7,7 @@
   font-family: 'JetBrains Mono', monospace;
   box-sizing: border-box;
   padding: 0;
+  max-width: 1250px;
 }
 
 .body {
@@ -27,13 +28,23 @@
   }
 }
 
-.animatedGradientContainer {
+.customRow {
   background-color: #000000;
   height: 35vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100vw;
 }
+
+.customRowSmall {
+  background-color: #000000;
+  height: 17.5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 .square {
   width: 15px;
@@ -41,12 +52,12 @@
  background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #000000 38%, #ee07ee 50%, #f5f2f2 62%, #02d5fa 75%, #000000 87%, #000000 95%, #000000 100%);
   background-size: 400% 400%;
   animation: gradient 10.5s ease infinite;
-
 }
-.square2 {
+
+.circle {
   width: 13.5px;
   height: 13.5px;
- background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #000000 38%, #f5f2f2 50%, #ee07ee 62%, #02d5fa 75%, #000000 87%, #000000 100%);
+ background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #02d5fa 38%, #f5f2f2 50%, #ee07ee 62%, #000000 75%, #000000 87%, #000000 100%);
   background-size: 400% 400%;
   animation: gradient 16s ease infinite;
   border-radius: 10px;
@@ -58,32 +69,39 @@
   font-size: 25px;
 }
 
-.sectionHeader {
+.projectGallery {
+  width: 100vw;
+}
+
+.projectGalleryHeader {
   display: flex;
   justify-content: center;
   align-self: center;
   color: whitesmoke;
   background-color: #000000;
   font-size: 30px;
-  margin-bottom: 0;
-  padding-bottom: .5rem;
+  padding-top: 15rem;
+  padding-bottom: .75rem;
   text-decoration: underline;
 }
 
 .sectionHeader2 {
   display: flex;
+  text-decoration: underline;
   justify-content: center;
   align-self: center;
   color: whitesmoke;
-  background-color: #000000;
   font-size: 30px;
   margin-bottom: 0;
-  padding-bottom: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  width: 100vw;
 }
 
+
 .skillGallery {
-  width: 100%;
-  height: 55rem;
+  width: 100vw;
+  height: 115vh;
   padding-top: 3rem; 
   background-color: rgb(10, 2, 56);
 }
@@ -94,7 +112,6 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  /* border: 1px solid purple; */
   margin: 0px 35rem 0px 35rem;
 }
 
@@ -103,7 +120,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* border: 1px solid purple; */
   margin-left: 15rem;
   margin-right: 15rem;
 }
@@ -115,7 +131,6 @@
   align-items: center;
   margin-left: 30rem;
   margin-right: 30rem;
-  /* border: 1px solid purple; */
 }
 
 .iconRow5 {
@@ -123,7 +138,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid purple; */
   margin-left: 41rem;
   margin-right: 41rem;
 }
@@ -133,7 +147,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid purple; */
 }
 
 .column1 {
@@ -141,7 +154,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
-  /* border: 1px solid purple; */
 }
 
 .column2 {
@@ -149,7 +161,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: baseline;
-  /* border: 1px solid purple; */
 }
 
 .npmI {
@@ -159,3 +170,111 @@
 .mongStyles {
   padding-right: 6rem !important;
 }
+
+.contactSection {
+  width: 100vw;
+  background-color: #000000;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 476px and below) */
+@media (max-width: 476px) { 
+  .customRow {
+    background-color: #000000;
+    height: 37.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 189vw;
+  }
+  .text {
+    background-color: black;
+    color: whitesmoke;
+    font-size: .9em;
+  }
+  .projectGallery {
+    width: 189vw;
+  }
+  .skillGallery {
+    width: 189vw;
+    height: 75vh;
+    padding-top: 3rem; 
+    background-color: rgb(212, 206, 245);
+  }
+  .iconRow2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+  }
+  .iconRow3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+  
+  .iconRow4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+  
+  .iconRow5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 41rem;
+    margin-right: 41rem;
+  }
+  
+  .iconRow6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  
+  .npmI {
+    margin-top: 1.5rem !important;
+  }
+  
+  .mongStyles {
+    padding-right: 6rem !important;
+  }
+  .sectionHeader2 {
+    width: 189vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
