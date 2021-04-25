@@ -15,8 +15,8 @@ const ProjectList = () => {
               width="400"
             />
               <div className="card-body">
-                <h5 className="card-title">Dj6-Notebook</h5>
-                <p className="card-text">A published NPM package that can launch a in-browser coding environment to write & execute JavaScript code.</p>
+                <h5 style={{textDecoration: 'underline', color: 'teal', fontSize: '20px'}} className="card-title">Dj6-Notebook</h5>
+                <p className="card-text">A published NPM package that will launch an in-browser coding environment, which allows a user to write & execute JavaScript code.</p>
               </div>
               <ul className="list-group list-group-flush">
               <li className="list-group-item">Featured Techs</li>
@@ -42,7 +42,7 @@ const ProjectList = () => {
               width="400"
             />
               <div className="card-body">
-                <h5 className="card-title">E-Commerce Web Store</h5>
+                <h5 style={{textDecoration: 'underline', color: 'teal', fontSize: '20px'}} className="card-title">E-Commerce Web Store</h5>
                 <p className="card-text">A customizable e-commerce web application, integrated with marketing & client communication tools.</p>
               </div>
               <ul className="list-group list-group-flush">
@@ -70,7 +70,7 @@ const ProjectList = () => {
             width="400"
           />
           <div className="card-body">
-            <h5 className="card-title">RezzShop</h5>
+            <h5 style={{textDecoration: 'underline', color: 'teal', fontSize: '20px'}} className="card-title">RezzShop</h5>
             <p className="card-text">RezzShop is a web application designed to provide low cost & modern e-commerce web services for small bars & restaurants.</p>
           </div>
           <ul className="list-group list-group-flush">
@@ -101,7 +101,7 @@ const ProjectList = () => {
             width="400"
           />
             <div className="card-body">
-              <h5 className="card-title">Somm-J</h5>
+              <h5 style={{textDecoration: 'underline', color: 'teal', fontSize: '20px'}} className="card-title">Somm-J</h5>
               <p className="card-text">Somm-J is an interactive wine journal that allows users to store and catalogue all of their wine tastings that they wish to collect.</p>
             </div>
             <ul className="list-group list-group-flush">

@@ -7,14 +7,9 @@
   font-family: 'JetBrains Mono', monospace;
   box-sizing: border-box;
   padding: 0;
-  max-width: 1250px;
+  width: 100vw;
 }
 
-.body {
-  background-color: rgb(247, 241, 241);
-  width:100vw;
-  height: 100vh;
-}
 
 @keyframes gradient {
   0% {
@@ -80,7 +75,7 @@
   color: whitesmoke;
   background-color: #000000;
   font-size: 30px;
-  padding-top: 15rem;
+  padding-top: 1rem;
   padding-bottom: .75rem;
   text-decoration: underline;
 }
@@ -91,7 +86,7 @@
   justify-content: center;
   align-self: center;
   color: whitesmoke;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 0;
   padding-top: 1rem;
   padding-bottom: 2.5rem;
@@ -101,23 +96,22 @@
 
 .skillGallery {
   width: 100vw;
-  height: 115vh;
+  height: 145vh;
   padding-top: 3rem; 
-  background-color: rgb(10, 2, 56);
+  background-color: rgb(139, 170, 236);
 }
 
 .iconRow2 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   padding-top: 1rem;
-  margin: 0px 35rem 0px 35rem;
+  margin-left: 40rem;
+  width: 35vw;
 }
 
 .iconRow3 {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin-left: 15rem;
@@ -126,7 +120,6 @@
 
 .iconRow4 {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-left: 30rem;
@@ -135,7 +128,6 @@
 
 .iconRow5 {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-left: 41rem;
@@ -144,7 +136,6 @@
 
 .iconRow6 {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -172,6 +163,9 @@
 }
 
 .contactSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   background-color: #000000;
 }
@@ -180,66 +174,69 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 476px and below) */
-@media (max-width: 476px) { 
+@media (max-width: 476px) {
+  .container {
+    font-family: 'JetBrains Mono', monospace;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+  } 
   .customRow {
     background-color: #000000;
-    height: 37.5vh;
+    height: 37vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 189vw;
+    width: 100vw;
   }
   .text {
     background-color: black;
     color: whitesmoke;
-    font-size: .9em;
+    font-size: .7em;
   }
   .projectGallery {
-    width: 189vw;
+    width: 100vw;
   }
   .skillGallery {
-    width: 189vw;
-    height: 75vh;
+    width: 100vw;
+    height: 100vh;
     padding-top: 3rem; 
     background-color: rgb(212, 206, 245);
   }
+
   .iconRow2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
-
+    padding: 1rem .25rem 0rem .25rem;
+    margin: 0px 0px 0px 0px;
+    width: 100vw;
   }
+
   .iconRow3 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    padding-top: 1rem;
+    margin: 0px 0px 0px 30px;
+    width: 80vw;
   }
   
   .iconRow4 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 30rem;
-    margin-right: 30rem;
+
   }
   
   .iconRow5 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 41rem;
-    margin-right: 41rem;
+
   }
   
   .iconRow6 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -249,6 +246,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
+    height: 10vh;
   }
   
   .column2 {
@@ -256,6 +254,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: baseline;
+    height: 25vh;
   }
   
   .npmI {
@@ -266,8 +265,21 @@
     padding-right: 6rem !important;
   }
   .sectionHeader2 {
-    width: 189vw;
+    width: 100vw;
+    font-size: .75em;
+    text-decoration: none;
   }
+  .square {
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+  }
+  .circle {
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */

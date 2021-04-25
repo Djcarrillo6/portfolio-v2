@@ -14,7 +14,6 @@ import reactIcon from '../public/react-brands.svg';
 import angularIcon from '../public/angular.svg';
 import awsIcon from '../public/aws-2.svg';
 import djangoIcon from '../public/django-community.svg';
-import firebaseIcon from '../public/firebase-1.svg';
 import googleCldIcon from '../public/google-cloud-3.svg';
 import herokuIcon from '../public/heroku-1.svg';
 import azureIcon from '../public/microsoft-azure-2.svg';
@@ -35,22 +34,22 @@ export default function Home() {
       <Head>
         <title>Dj's Portfolio</title>
         {/* Keyword selection to match technical skill section */}
-        <meta name='keywords' content='' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
       </Head>
       
+      < NavBar />
       <div className={styles.container}>
-        < NavBar />
-
         <div id="home" className={styles.customRow}>
             <div className={styles.square} ></div>
             <div className={styles.circle} ></div>
-            <p className={styles.text} >Hi I'm DJ. I design & build web and mobile apps.
+            <p className={styles.text} >Hi I'm DJ.
             </p>
             <div className={styles.square} ></div>
             <div className={styles.circle} ></div>
             <div className={styles.square} ></div>
             <div className={styles.circle} ></div>
             <div className={styles.square} ></div>
+            <p className={styles.text}>I design & build web and mobile apps.</p>
             <div className={styles.circle} ></div>
             <div className={styles.square} ></div>
             <div className={styles.circle} ></div>
@@ -83,7 +82,7 @@ export default function Home() {
           <div className={styles.circle} ></div>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
-          <p className={styles.text} >I like prefer programming.
+          <p className={styles.text} >But I prefer programming.
             </p>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
@@ -93,141 +92,131 @@ export default function Home() {
           <p className={styles.projectGalleryHeader}>Project Gallery</p>
           <ProjectList />
         </section>
-
-        
-        <section className={styles.skillsSection}>
         
           <div className={styles.skillGallery}>
-          <p className={styles.sectionHeader2} >Favorite Technologies</p>
-              <div className={styles.iconRow2}>
-                    <Image src={pythonIcon}
-                      alt="Python"
-                      width={75}
-                      height={75}
-                      />
-                      <Image src={typeScrtIcon}
-                      alt="Typescript"
-                      width={50}
-                      height={50}
-                      />
-                      <Image src={jsIcon}
-                      alt="JavaScript"
-                      width={175}
-                      height={175}
-                      />
-                    <Image src={djangoIcon}
-                      alt="Django"
-                      width={125}
-                      height={125}
-                      />
-              </div>
-
-              <div className={styles.iconRow3}>
-                      <Image src={nodeIcon}
-                      alt="Nodejs"
-                      width={380}
-                      height={280}
-                      />
-                      <Image src={reactIcon}
-                      alt="React"
-                      width={275}
-                      height={275}
-                      />
-
-                  <div className={styles.column1}>
-                            <Image src={angularIcon}
-                            alt="Angularjs"
-                            width={175}
-                            height={115}
-                            />
-                            <Image src={reduxIcon}
-                            alt="Redux"
-                            width={85}
-                            height={85}
-                            />
-                  </div>
-                  <div className={styles.column2}>
-                        <Image src={reactNatvIcon}
-                        alt="React Native"
-                        width={95}
-                        height={95}
+            <p className={styles.sectionHeader2} style={{color: 'purple'}}>My Technology Cluster</p>
+                <div className={styles.iconRow2}>
+                      <Image src={pythonIcon}
+                        alt="Python"
+                        width={75}
+                        height={75}
                         />
-                        <Image src={npmIcon}
-                        alt="NPM"
-                        width={200}
+                        <Image src={typeScrtIcon}
+                        alt="Typescript"
+                        width={50}
+                        height={50}
+                        />
+                        <Image src={jsIcon}
+                        alt="JavaScript"
+                        width={135}
+                        height={135}
+                        />
+                      <Image src={djangoIcon}
+                        alt="Django"
+                        width={125}
+                        height={125}
+                        />
+                </div>
+
+                <div className={styles.iconRow3}>
+                        <Image src={nodeIcon}
+                        alt="Nodejs"
+                        width={300}
+                        height={200}
+                        />
+                        <Image src={reactIcon}
+                        alt="React"
+                        width={225}
+                        height={225}
+                        />
+
+                    <div className={styles.column1}>
+                              <Image src={angularIcon}
+                              alt="Angularjs"
+                              width={175}
+                              height={115}
+                              />
+                              <Image src={reduxIcon}
+                              alt="Redux"
+                              width={85}
+                              height={85}
+                              />
+                    </div>
+                    <div className={styles.column2}>
+                          <Image src={reactNatvIcon}
+                          alt="React Native"
+                          width={95}
+                          height={95}
+                          />
+                          <Image src={npmIcon}
+                          alt="NPM"
+                          width={75}
+                          height={75}
+                          className={styles.npmI}
+                          />
+                          <Image src={nextjsIcon}
+                          alt="Nextjs"
+                          width={150}
+                          height={150}
+                          />
+                    </div>
+                </div>
+                
+                <div className={styles.iconRow4}>
+                        <Image src={herokuIcon}
+                        alt="Heroku"
+                        width={100}
                         height={100}
-                        className={styles.npmI}
                         />
-                         <Image src={nextjsIcon}
-                        alt="Nextjs"
-                        width={150}
-                        height={150}
+                        <Image src={awsIcon}
+                        alt="AWS"
+                        width={100}
+                        height={100}
                         />
-                  </div>
-              </div>
-              
-              <div className={styles.iconRow4}>
-                      <Image src={herokuIcon}
-                      alt="Heroku"
-                      width={100}
-                      height={100}
-                      />
-                      <Image src={awsIcon}
-                      alt="AWS"
-                      width={100}
-                      height={100}
-                      />
-                    <Image src={googleCldIcon}
-                      alt="Google Cloud"
-                      width={115}
-                      height={115}
-                      />
-                    <Image src={azureIcon}
-                      alt="Azure Cloud"
-                      width={115}
-                      height={115}
-                      />
-                      <Image src={firebaseIcon}
-                      alt="Firebase"
-                      width={75}
-                      height={75}
-                      />
-              </div>
+                      <Image src={googleCldIcon}
+                        alt="Google Cloud"
+                        width={115}
+                        height={115}
+                        />
+                      <Image src={azureIcon}
+                        alt="Azure Cloud"
+                        width={115}
+                        height={115}
+                        />
+                </div>
 
-              <div className={styles.iconRow5}>
-                      <Image src={springBootIcon}
-                      alt="SpringBoot"
-                      width={110}
-                      height={110}
-                      />
-                      <Image src={javaIcon}
-                      alt="Java"
-                      width={105}
-                      height={105}
-                      />
-                      <Image src={linuxIcon}
-                      alt="Linux"
-                      width={75}
-                      height={75}
-                      />
-              </div>
+                <div className={styles.iconRow5}>
+                        <Image src={springBootIcon}
+                        alt="SpringBoot"
+                        width={110}
+                        height={110}
+                        />
+                        <Image src={javaIcon}
+                        alt="Java"
+                        width={105}
+                        height={105}
+                        />
+                        <Image src={linuxIcon}
+                        alt="Linux"
+                        width={75}
+                        height={75}
+                        />
+                </div>
 
-              <div className={styles.iconRow6}>
-                      <Image src={mongoDbIcon}
-                      alt="MongoDB"
-                      width={300}
-                      height={175}
-                      className={styles.mongStyles}
-                      />
-                      <Image src={mysqlIcon}
-                      alt="MySQL"
-                      width={80}
-                      height={80}
-                      />
-              </div>
-
+                <div className={styles.iconRow6}>
+                        <Image src={mongoDbIcon}
+                        alt="MongoDB"
+                        width={300}
+                        height={175}
+                        className={styles.mongStyles}
+                        />
+                        <Image src={mysqlIcon}
+                        alt="MySQL"
+                        width={80}
+                        height={80}
+                        />
+                </div>
           </div>
-        </section>
 
         <div className={styles.customRow}>
           <div className={styles.square} ></div>
@@ -244,8 +233,8 @@ export default function Home() {
 
         <section className={styles.contactSection} id="contact-form">
           <p className={styles.sectionHeader2}>Have an idea you would like to develop? Let's connect.</p>
-          <ContactForm />
-        </section>        
+        </section>
+        <ContactForm />        
 
         <div className={styles.customRow}>
           <div className={styles.square} ></div>
@@ -259,9 +248,10 @@ export default function Home() {
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
         </div>
+        <Footer />
     </div>
 
-    <Footer />
+    
 
     </>
   )

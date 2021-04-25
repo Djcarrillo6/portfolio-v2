@@ -1,9 +1,16 @@
 .contactForm {
   background-color: black;
-
+  width: 100%;
 }
 
 .inputRow1 {
-  margin-left: 20rem;
+  margin-left: 9rem;
   height:12rem;
+}
+
+@media (max-width: 476px) {
+  .inputRow1 {
+    margin-left: 6rem;
+    height:10rem;
+  }
 }

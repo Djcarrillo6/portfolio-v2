@@ -49,7 +49,7 @@ const ContactForm = () => {
     <div className={styles.contactForm}>
       <div className='container'>
         <div className={styles.inputRow1}>
-          <div className='col-8 text-center'>
+          <div style={{width: '50vw', marginLeft: '1rem'}}  className='text-center'>
             <div className='|'>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div className='row'>
@@ -65,7 +65,7 @@ const ContactForm = () => {
                         }
                       })}
                       className='form-control'
-                      placeholder='Your Name'
+                      placeholder='Name'
                     ></input>
                     {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                   </div>
@@ -78,7 +78,7 @@ const ContactForm = () => {
                         pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                       })}
                       className='form-control'
-                      placeholder='Your Email'
+                      placeholder='Email'
                     ></input>
                     {errors.email && (
                       <span className='errorMessage'>Please enter a valid email address</span>
@@ -108,7 +108,7 @@ const ContactForm = () => {
                 <div className='row'>
                   <div className='col'>
                     <textarea
-                      rows={3}
+                      rows={5}
                       name='message'
                       ref={register({
                         required: true
@@ -120,7 +120,7 @@ const ContactForm = () => {
                   </div>
                 </div>
                 <button style={{marginTop: '1rem'}}  className='btn btn-success' type='submit'>
-                  Submit
+                  Send
                 </button>
               </form>
             </div>

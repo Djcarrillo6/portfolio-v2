@@ -66,6 +66,18 @@
     z-index: 1;
     width: 100%;
   }
+
+  .nav h1 {
+    font-size: 12px;
+    align-self: flex-start;
+  }
+  .nav a {
+    font-size: 10px;
+  }
+  .nav ul {
+    align-self: flex-end;
+    margin-left: 1.5rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */

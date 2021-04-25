@@ -44,4 +44,16 @@
   .myRow2 {
     margin-left: 14.5rem;
   }
+  .cardwidth {
+    width: 20rem;
+    height: 45rem;
+    border:  10px solid rgb(10, 2, 56);
+  }
+  .myRow2 {
+    display: flex;
+    justify-content: left;
+    margin-left: 2rem;
+    margin-top: 2.75rem;
+    padding-bottom: 2rem;
+  }
 }

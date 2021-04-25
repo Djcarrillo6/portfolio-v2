@@ -35,3 +35,33 @@
   justify-content: center;
   margin-left: 6rem;
 }
+
+@media (max-width: 476px) {
+  .footerContainer {
+    background-color: rgb(10, 2, 56);;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8.5rem;
+  }
+  .footerTextStyles {
+    color: whitesmoke;
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: 6rem;
+  }
+  .footerHeader {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .footerWrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+  .iconContainer {
+    display: flex;  
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+  }
+}
