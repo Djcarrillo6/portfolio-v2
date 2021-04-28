@@ -8,9 +8,48 @@
   height:12rem;
 }
 
-@media (max-width: 476px) {
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bootstrapContainer {
+  width: 100vw;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: 19rem;
+}
+
+@media only screen and (max-width: 476px) and (min-width: 0px){
+  .contactForm {
+    background-color: black;
+    width: 100vw;
+  }
   .inputRow1 {
-    margin-left: 6rem;
+    margin-left: 1rem;
     height:10rem;
+    padding-top: 3rem;
+    width: 100vw;
+  }
+  .mobileSettings {
+    width: 80vw !important;
+  }
+  .bootstrapContainer {
+    width: 100vw !important;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 769px) and (min-width: 477px) {
+  .inputRow1 {
+    margin-left: 1rem;
+    height:10rem;
+  }
+  .mobileSettings {
+    width: 90% !important;
   }
 }

@@ -94,7 +94,7 @@ export default function Home() {
         </section>
         
           <div className={styles.skillGallery}>
-            <p className={styles.sectionHeader2} style={{color: 'purple'}}>My Technology Cluster</p>
+            <p className={styles.techSkillHeader} style={{color: 'purple'}}>My Technology Cluster</p>
                 <div className={styles.iconRow2}>
                       <Image src={pythonIcon}
                         alt="Python"
@@ -103,13 +103,13 @@ export default function Home() {
                         />
                         <Image src={typeScrtIcon}
                         alt="Typescript"
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                         />
                         <Image src={jsIcon}
                         alt="JavaScript"
-                        width={135}
-                        height={135}
+                        width={105}
+                        height={105}
                         />
                       <Image src={djangoIcon}
                         alt="Django"
@@ -163,11 +163,11 @@ export default function Home() {
                 </div>
                 
                 <div className={styles.iconRow4}>
-                        <Image src={herokuIcon}
+                        {/* <Image src={herokuIcon}
                         alt="Heroku"
                         width={100}
                         height={100}
-                        />
+                        /> */}
                         <Image src={awsIcon}
                         alt="AWS"
                         width={100}
@@ -188,13 +188,13 @@ export default function Home() {
                 <div className={styles.iconRow5}>
                         <Image src={springBootIcon}
                         alt="SpringBoot"
-                        width={110}
-                        height={110}
+                        width={100}
+                        height={100}
                         />
                         <Image src={javaIcon}
                         alt="Java"
-                        width={105}
-                        height={105}
+                        width={100}
+                        height={100}
                         />
                         <Image src={linuxIcon}
                         alt="Linux"
@@ -232,11 +232,13 @@ export default function Home() {
         </div>
 
         <section className={styles.contactSection} id="contact-form">
-          <p className={styles.sectionHeader2}>Have an idea you would like to develop? Let's connect.</p>
+          <p className={styles.sectionHeader2}>Have an idea you would like to develop?</p>
+          <p className={styles.sectionHeader2}>Do you need something built?</p>
+          <p className={styles.sectionHeader2}>Let's Connect.</p>
         </section>
         <ContactForm />        
 
-        <div className={styles.customRow}>
+        <div className={styles.footerRow}>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
           <div className={styles.square} ></div>

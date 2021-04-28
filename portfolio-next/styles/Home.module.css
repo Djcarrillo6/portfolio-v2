@@ -2,15 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
 
-
 .container {
   font-family: 'JetBrains Mono', monospace;
   box-sizing: border-box;
   padding: 0;
   width: 100vw;
 }
-
-
 @keyframes gradient {
   0% {
       background-position: 0%;
@@ -22,7 +19,6 @@
       background-position: 0%;
   }
 }
-
 .customRow {
   background-color: #000000;
   height: 35vh;
@@ -31,7 +27,6 @@
   align-items: center;
   width: 100vw;
 }
-
 .customRowSmall {
   background-color: #000000;
   height: 17.5vh;
@@ -39,8 +34,6 @@
   justify-content: space-evenly;
   align-items: center;
 }
-
-
 .square {
   width: 15px;
   height: 15px;
@@ -48,7 +41,6 @@
   background-size: 400% 400%;
   animation: gradient 10.5s ease infinite;
 }
-
 .circle {
   width: 13.5px;
   height: 13.5px;
@@ -57,17 +49,14 @@
   animation: gradient 16s ease infinite;
   border-radius: 10px;
 }
-
 .text {
   background-color: black;
   color: whitesmoke;
   font-size: 25px;
 }
-
 .projectGallery {
   width: 100vw;
 }
-
 .projectGalleryHeader {
   display: flex;
   justify-content: center;
@@ -79,10 +68,8 @@
   padding-bottom: .75rem;
   text-decoration: underline;
 }
-
 .sectionHeader2 {
   display: flex;
-  text-decoration: underline;
   justify-content: center;
   align-self: center;
   color: whitesmoke;
@@ -92,24 +79,26 @@
   padding-bottom: 2.5rem;
   width: 100vw;
 }
-
-
+.techSkillHeader {
+  width: 115vw;
+  font-size: 1.5em;
+  margin-left: 47rem;
+  text-decoration: none;
+}
 .skillGallery {
   width: 100vw;
-  height: 145vh;
+  height: 91vh;
   padding-top: 3rem; 
   background-color: rgb(139, 170, 236);
 }
-
 .iconRow2 {
   display: flex;
   justify-content:space-between;
   align-items: center;
   padding-top: 1rem;
-  margin-left: 40rem;
+  margin-left: 35rem;
   width: 35vw;
 }
-
 .iconRow3 {
   display: flex;
   justify-content: space-around;
@@ -117,7 +106,6 @@
   margin-left: 15rem;
   margin-right: 15rem;
 }
-
 .iconRow4 {
   display: flex;
   justify-content: space-between;
@@ -125,7 +113,6 @@
   margin-left: 30rem;
   margin-right: 30rem;
 }
-
 .iconRow5 {
   display: flex;
   justify-content: space-between;
@@ -133,157 +120,339 @@
   margin-left: 41rem;
   margin-right: 41rem;
 }
-
 .iconRow6 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .column1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
 }
-
 .column2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: baseline;
 }
-
 .npmI {
   margin-top: 1.5rem !important;
 }
-
 .mongStyles {
   padding-right: 6rem !important;
 }
-
 .contactSection {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
   background-color: #000000;
 }
+.footerRow {
+  background-color: #000000;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  padding-top: 7rem;
+}  
 
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 476px and below) */
-@media (max-width: 476px) {
+@media only screen and (max-width: 476px) and (min-width: 0px){
   .container {
     font-family: 'JetBrains Mono', monospace;
     box-sizing: border-box;
+    padding: 0;
     width: 100vw;
     height: 100vh;
-  } 
+  }
   .customRow {
     background-color: #000000;
-    height: 37vh;
+    height: 32vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
   }
   .text {
     background-color: black;
     color: whitesmoke;
-    font-size: .7em;
+    font-size: 8px;
   }
   .projectGallery {
     width: 100vw;
   }
+  .projectGalleryHeader {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: whitesmoke;
+    background-color: #000000;
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: .75rem;
+    text-decoration: underline;
+  }
+  .sectionHeader2 {
+    width: 100vw;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  .techSkillHeader {
+    width: 95vw;
+    font-size: 2em;
+    margin-left: 2.5rem;
+    text-decoration: none;
+  }
   .skillGallery {
     width: 100vw;
-    height: 100vh;
+    height: 125vh;
     padding-top: 3rem; 
     background-color: rgb(212, 206, 245);
   }
-
   .iconRow2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem .25rem 0rem .25rem;
-    margin: 0px 0px 0px 0px;
-    width: 100vw;
+    padding: 0rem 1rem 1rem 1rem;
+    margin: 0px 0px 0px 25px;
+    width: 90vw;
+    height: 30vh;
   }
-
   .iconRow3 {
     display: flex;
     align-items: center;
     padding-top: 1rem;
-    margin: 0px 0px 0px 30px;
-    width: 80vw;
+    margin: 0px 0px 0px 5px;
+    width: 97vw;
+    height: 15vh;
   }
-  
   .iconRow4 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
+    height: 20vh;
+    width: 96vw;
+    padding-right: .5rem;
+    margin: 20px 0px 0px 20px;
   }
-  
   .iconRow5 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
-  }
-  
+    height: 10vh;
+    padding-right: 1rem;
+    margin: 20px 0px 0px 50px;
+    width: 70vw;
+  } 
   .iconRow6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem; 
+    margin-left: 1rem;
+    padding: 0px 100px 0px 100px;
+    width: 85vw;
+    height: 9vh;  
   }
-  
   .column1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    height: 10vh;
+    height: 20vh;
   }
-  
   .column2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: baseline;
-    height: 25vh;
+    height: 30vh;
   }
-  
   .npmI {
     margin-top: 1.5rem !important;
   }
-  
+  .mongStyles {
+    padding-right: 6rem !important;
+  }
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #000000;
+  }
+
+  .footerRow {
+    background-color: #000000;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    padding-top: 7rem;
+  }
+  .square {
+    height: 8px;
+    width: 8px;
+  }
+  .circle {
+    height: 6.5px;
+    width: 6.5px;
+  }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 477px) {
+  .container {
+    font-family: 'JetBrains Mono', monospace;
+    box-sizing: border-box;
+    width: 157vw;
+    height: 80vh;
+  } 
+  .customRow {
+    background-color: #000000;
+    height: 38vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 157vw;
+  }
+  .text {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.5em;
+  }
+  .projectGallery {
+    width: 142.5vw;
+  }
+  .projectGalleryHeader {
+    display: flex;
+    width: 157vw;
+    justify-content: center;
+    align-self: center;
+    color: whitesmoke;
+    background-color: #000000;
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: .75rem;
+    text-decoration: underline;
+  }
+  .techSkillHeader {
+    width: 115vw;
+    font-size: 2em;
+    margin-left: 25rem;
+    text-decoration: none;
+  }
+  .skillGallery {
+    width: 157vw;
+    height: 150vh;
+    padding-top: 3rem; 
+    background-color: rgb(212, 206, 245);
+  }
+  .iconRow2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 10rem 5rem 10rem;
+    margin: 0px 0px 0px 150px;
+    width: 110vw;
+  }
+  .iconRow3 {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 0px 0px 100px 130px;
+    width: 110vw;
+    height: 15vh;
+  }
+  .iconRow4 {
+    display: flex;
+    justify-content: space-around;
+    align-items:stretch;
+    margin: 0px  0px 50px 200px;
+    width: 90vw;
+    height: 15vh;
+  }
+  .iconRow5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+    margin: 0px 0px 0px 225px;
+    width: 80vw;
+    height: 15vh;
+  }
+  .iconRow6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px 0px 290px; 
+    padding: 0px 100px 40px 100px;
+    width: 70vw;
+    height: 20vh;  
+  }
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 20vh;
+  }
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    height: 35vh;
+  }
+  .npmI {
+    margin-top: 1.5rem !important;
+  }
   .mongStyles {
     padding-right: 6rem !important;
   }
   .sectionHeader2 {
-    width: 100vw;
-    font-size: .75em;
+    width: 140vw;
+    text-decoration: underline;
+    font-size: 2em;
+  }
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 157vw;
+    background-color: #000000;
+  }
+  .contactSection p {
+    font-size: 22px;
     text-decoration: none;
+    width: 157vw;
+  }
+  .footerRow {
+    background-color: #000000;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 157vw;
+    padding-top: 7rem;
   }
   .square {
-    opacity: 0;
-    height: 0px;
-    width: 0px;
+    height: 11px;
+    width: 11px;
   }
   .circle {
-    opacity: 0;
-    height: 0px;
-    width: 0px;
+    height: 9.5px;
+    width: 9.5px;
   }
-
 }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { }

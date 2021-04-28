@@ -47,10 +47,9 @@ const ContactForm = () => {
 
   return (
     <div className={styles.contactForm}>
-      <div className='container'>
+      <div className={styles.bootstrapContainer}>
         <div className={styles.inputRow1}>
-          <div style={{width: '50vw', marginLeft: '1rem'}}  className='text-center'>
-            <div className='|'>
+          <div style={{width: '50vw', marginLeft: '1rem'}} className={styles.mobileSettings}>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div className='row'>
                   <div className='col-6'>
@@ -119,11 +118,12 @@ const ContactForm = () => {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
-                <button style={{marginTop: '1rem'}}  className='btn btn-success' type='submit'>
-                  Send
-                </button>
+                <div className={styles.button}>
+                  <button style={{marginTop: '1rem', width: '30vw'}}  className='btn btn-success' type='submit'>
+                    Send
+                  </button>
+                </div>
               </form>
-            </div>
             <ToastContainer />
           </div>
         </div>

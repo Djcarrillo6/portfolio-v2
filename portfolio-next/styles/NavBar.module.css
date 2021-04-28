@@ -26,6 +26,10 @@
   justify-content: center;
 }
 
+.nav h1 {
+  font-size: 15px;
+}
+
 .nav a {
   color: #fff;
   text-decoration: none;
@@ -56,32 +60,67 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 476px and below) */
-@media (max-width: 476px) { 
+@media only screen and (max-width: 476px) and (min-width: 0px){
   .nav {
-    background-color: rgb(144, 129, 224);
+    background-color: rgb(10, 2, 56);
     top: 0;
     left: 0;
     right: 0;
     transition: all 0.3s ease-in-out;
     z-index: 1;
-    width: 100%;
+    width: 100vw;
   }
-
+  .nav .container {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    padding: 25px 0px 25px 10px;
+    transition: all 0.3s ease-in-out;
+  }
   .nav h1 {
     font-size: 12px;
     align-self: flex-start;
   }
   .nav a {
-    font-size: 10px;
+    font-size: 9px;
+    padding-left: .2rem;
+  }
+  .nav ul {
+    align-self: flex-end;
+    padding-left: 9rem;
+    margin-left: .5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 769px) and (min-width: 477px) {
+  .nav {
+    background-color: rgb(10, 2, 56);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    width: 157vw;
+  }
+  .nav .container {
+    width: 157vw;
+    padding: 20px 50px 20px 10px;
+  }
+  .nav h1 {
+    font-size: 12px;
+    align-self: flex-start;
+  }
+  .nav a {
+    font-size: 20px;
   }
   .nav ul {
     align-self: flex-end;
     margin-left: 1.5rem;
   }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
+ }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { }

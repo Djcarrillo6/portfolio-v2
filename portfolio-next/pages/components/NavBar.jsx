@@ -6,7 +6,7 @@
   return (
       <nav className={styles.nav}>
         <div className={styles.container}>
-          <h1 className="|"><a href="/">DJ's Portfolio</a></h1>
+          <h1><a href="/">DJ's Portfolio</a></h1>
           <ul>
             <li><a href="/#home">Home</a></li>
             <li><a href="/Profile">Profile</a></li>
