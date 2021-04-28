@@ -90,12 +90,12 @@
 /* Devices off screen sizes between 477px - 768px (Tablets)*/
 @media only screen and (max-width: 769px) and (min-width: 477px) {
   .blackBorder {
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     margin-bottom: 0rem;
   }
   .galleryContainer {
-    width: 157vw;  
+    width: 100vw;  
   }
   .galleryContainer p {
     font-size: 9px;
@@ -112,22 +112,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 157vw;
-    height: 89vh;
+    width: 100vw;
+    height: 80vh;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
   }
   .myRow2 {
     display: flex;
     justify-content: left;
-    margin-left: 4.5rem;
-    width: 157vw;
-    height: 85vh;
-    padding-bottom: 1rem;
+    margin-left: .5rem;
+    margin-top: .75rem;
+    padding-bottom: 2rem;
   }
   .cardWidth {
     width: 15rem !important;
-    height: 28.5rem;
+    height: 29.5rem;
   }
   .cardLinks {
     display: flex;

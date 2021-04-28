@@ -95,13 +95,13 @@ const ProjectList = () => {
       <div className={styles.myRow2}>
         <div className={styles.blackBorder}>
           <div className="card" className={styles.cardWidth}>
-          <Image className="card-img-top"
-            src="/sommbook.png"
-            alt="SommBook Image"
-            height="300"
-            width="400"
-            layout="responsive"
-          />
+            <Image className="card-img-top"
+              src="/sommbook.png"
+              alt="SommBook Image"
+              height="300"
+              width="400"
+              layout="responsive"
+            />
             <div className="card-body">
               <h5 className="card-title">Somm-J</h5>
               <p className="card-text">Somm-J is an interactive wine journal that allows users to store and catalogue all of their wine tastings that they wish to collect.</p>

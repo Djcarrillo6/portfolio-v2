@@ -52,4 +52,10 @@
   .mobileSettings {
     width: 90% !important;
   }
+  .bootstrapContainer {
+    width: 75vw;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-left: 6rem;
+  }
 }
