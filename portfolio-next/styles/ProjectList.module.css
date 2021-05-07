@@ -27,6 +27,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 1rem;  
 }
 .galleryContainer h5 {
   text-decoration: underline;
@@ -69,12 +70,12 @@
     justify-content: center;
     width: 70vw !important;
     height: 10vh !important;
-    margin-left: 5rem;
+    margin-left: 4.25rem;
     padding-bottom: 1rem !important;
   }
   .cardWidth {
     width: 19rem !important;
-    height: 31rem !important;
+    height: 32rem !important;
   }
   .cardLinks a {
     display: flex;

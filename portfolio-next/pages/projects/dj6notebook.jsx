@@ -11,7 +11,7 @@ const  dj6notebook = () => {
         
         <div className={styles.headerContainer}>
           <h5 className={styles.sectionHeaderText} >Project Name:</h5> 
-          <p className={styles.text} >dj6-jsnote</p>
+          <p className={styles.text} >NPM Module: Dj6-jsnote</p>
 
           <h5 className={styles.sectionHeaderText} >Project Description:</h5> 
           <p className={styles.text} >I created this web application as an NPM module, which is publically avaiable for use <a style={{textDecoration: 'underline', color: 'purple'}}  href="https://www.npmjs.com/packages/jsnote-dj6">here.</a> This NPM module is a CLI to launch an interactive development environment inside a user's browser, for writing, executing, and documenting code.</p>
@@ -29,8 +29,8 @@ const  dj6notebook = () => {
 
           <h5 className={styles.sectionHeaderText}>Project Key Notes:</h5>
           
-          <h6 style={{marginLeft: '1.5rem', marginTop: '1rem'}} >Hijacking ESBuild</h6>
-          <ul className={styles.text} >
+          <h6 style={{marginLeft: '1.5rem', marginTop: '1rem'}} >Customizing ESBuild</h6>
+          <ul className={styles.bulletPoints} >
                 <li>In order to safely execute a user's provided JavaScript code inside their browser, I customized the traditional ESBuild process with a unqiue plugin that performs a very specific role.
                 </li>
                 <li>I creating a custom ESBuild plugin that intercepts the bundle request before it resolves, and replaces the path location with a third party API that holds the same modules that are currently hosted on the NPM Registry.
@@ -44,7 +44,7 @@ const  dj6notebook = () => {
           <br />
 
           <h6 style={{marginLeft: '1.5rem'}}>Caching For Performance</h6>
-          <ul className={styles.text}>
+          <ul className={styles.bulletPoints}>
             <li>
               To reduce the amount of requests made to www.unpkg.com for the NPM modules that a user wishes to use in their coding environment, a caching unqiue layer is implemented.
             </li>

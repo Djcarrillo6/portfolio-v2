@@ -28,7 +28,7 @@ export default function ecommerceDjango() {
           <h5 className={styles.sectionHeaderText}>Project Key Notes:</h5>
           
           <h6 style={{marginLeft: '1.5rem', marginTop: '1rem'}} >Python & Django Backend</h6>
-          <ul className={styles.text} >
+          <ul className={styles.bulletPoints} >
                 <li>Constructed a Django back-end component to catalogue all sales products, and connected the store's database to a front-end user search tool, giving user quick searching ability while they shop.
                 </li>
                 <li>Integrated the Stripe API to process customer payments, as well as collect all correlated sales analytics.
@@ -38,7 +38,7 @@ export default function ecommerceDjango() {
           <br />
 
           <h6 style={{marginLeft: '1.5rem'}}>Bootstrap & jQuery Frontend</h6>
-          <ul className={styles.text}>
+          <ul className={styles.bulletPoints}>
             <li>
             Compiled HTML/CSS/Bootstrap & jQuery, to build a modern e-commerce shopping experience.
             </li>

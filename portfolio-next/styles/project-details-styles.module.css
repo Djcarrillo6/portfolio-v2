@@ -18,9 +18,19 @@
   padding-left: 1rem;
 }
 
+
 .text {
   margin-top: .5rem;
   margin-left: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: smaller;
+  padding-bottom: 1rem;
+}
+
+
+.bulletPoints {
+  margin-top: .5rem;
+  margin-left: 4rem;
   font-family: 'JetBrains Mono', monospace;
   font-size: smaller;
   padding-bottom: 1rem;
@@ -30,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 12rem;
+  margin-top: 4rem;
 }
 
 .sectionHeaderText {
@@ -45,4 +55,22 @@
 .iconRow {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 476px) and (min-width: 0px) {
+  .mainContainer {
+    height: 110vh;
+  }
+  .bulletPoints {
+    margin-left: .25rem;
+  }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 477px) {
+  .mainContainer {
+    height: 120vh;
+  }
+  .bulletPoints {
+    margin-left: .25rem;
+  }
 }

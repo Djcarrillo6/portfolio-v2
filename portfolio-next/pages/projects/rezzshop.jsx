@@ -29,7 +29,7 @@ export default function rezzshop() {
           <h5 className={styles.sectionHeaderText}>Project Key Notes:</h5>
           
           <h6 style={{marginLeft: '1.5rem', marginTop: '1rem'}} >Node.js & Express.js RESTful API</h6>
-          <ul className={styles.text} >
+          <ul className={styles.bulletPoints} >
                 <li>Used Node.js + Express.js, along with a series of middleware functions, to create & expose a RESTful API.
                 </li>
                 <li>Integrated the PayPal API to process customer payments.
@@ -39,7 +39,7 @@ export default function rezzshop() {
           <br />
 
           <h6 style={{marginLeft: '1.5rem'}}>React + Redux</h6>
-          <ul className={styles.text}>
+          <ul className={styles.bulletPoints}>
             <li>
             Designed an Admin platform and leveraged the Redux library to provide proprietors with a customized dashboard GUI of customer sales data.
             </li>

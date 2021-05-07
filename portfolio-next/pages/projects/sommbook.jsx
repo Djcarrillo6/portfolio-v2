@@ -29,7 +29,7 @@ export default function sommbook() {
           <h5 className={styles.sectionHeaderText}>Project Key Notes:</h5>
           
           <h6 style={{marginLeft: '1.5rem', marginTop: '1rem'}} >MySQL for Data</h6>
-          <ul className={styles.text} >
+          <ul className={styles.bulletPoints} >
                 <li>A SQL indexed database is used on the backend, and the API interfaces with it, in addition to the React.js front-end. 
                 </li>
                 <li>Exposed a Java Spring Boot RESTful API, which features server-side pagination, sorting, and more custom MySQL query tools.
