@@ -37,17 +37,17 @@
 .square {
   width: 15px;
   height: 15px;
- background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #000000 38%, #ee07ee 50%, #f5f2f2 62%, #02d5fa 75%, #000000 87%, #000000 95%, #000000 100%);
+ background: linear-gradient(-45deg, #000000 0%, #02d5fa 13%, #000000 25%, #ee07ee 38%, #ee07ee 50%, #53eeee 62%, #02d5fa 75%, #ee07ee 87%, #000000 95%, #000000 100%);
   background-size: 400% 400%;
-  animation: gradient 10.5s ease infinite;
+  animation: gradient 8s ease infinite;
 }
 .circle {
   width: 13.5px;
   height: 13.5px;
- background: linear-gradient(-45deg, #000000 0%, #000000 13%, #000000 25%, #02d5fa 38%, #f5f2f2 50%, #ee07ee 62%, #000000 75%, #000000 87%, #000000 100%);
+ background: linear-gradient(-45deg, #000000 0%, #ee07ee 13%, #02d5fa 25%, #02d5fa 38%, #53eeee 50%, #ee07ee 62%, #02d5fa 75%, #ee07ee 87%, #000000 100%);
   background-size: 400% 400%;
-  animation: gradient 16s ease infinite;
-  border-radius: 10px;
+  animation: gradient 10s ease infinite;
+  border-radius: 7px;
 }
 .text {
   background-color: black;
@@ -81,15 +81,17 @@
 }
 .techSkillHeader {
   width: 115vw;
-  font-size: 1.5em;
-  margin-left: 47rem;
+  font-size: 2.25rem;
+  text-decoration: underline !important;
+  margin-left: 42rem;
   text-decoration: none;
+  color: rgb(245, 225, 243);
 }
 .skillGallery {
   width: 100vw;
-  height: 91vh;
+  height: 95vh;
   padding-top: 3rem; 
-  background-color: rgb(139, 170, 236);
+  background-color: rgb(50, 23, 77);
 }
 .iconRow2 {
   display: flex;
@@ -178,10 +180,13 @@
     align-items: center;
     width: 100vw;
   }
+  .customRow p {
+    margin-left: 4px;;
+  }
   .text {
     background-color: black;
     color: whitesmoke;
-    font-size: 8px;
+    font-size: 10px;
   }
   .projectGallery {
     width: 100vw;
@@ -193,7 +198,7 @@
     align-self: center;
     color: whitesmoke;
     background-color: #000000;
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 1rem;
     padding-bottom: .75rem;
     text-decoration: underline;
@@ -206,22 +211,22 @@
   .techSkillHeader {
     width: 95vw;
     font-size: 2em;
-    margin-left: 2.5rem;
+    margin-left: 5.5rem;
     text-decoration: none;
   }
   .skillGallery {
     width: 100vw;
     height: 125vh;
     padding-top: 3rem; 
-    background-color: rgb(212, 206, 245);
+    background-color: rgb(50, 23, 77);
   }
   .iconRow2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0rem 1rem 1rem 1rem;
-    margin: 0px 0px 0px 25px;
-    width: 90vw;
+    margin: 0px 0px 0px 5px;
+    width: 98vw;
     height: 30vh;
   }
   .iconRow3 {
@@ -247,8 +252,8 @@
     align-items: center;
     height: 10vh;
     padding-right: 1rem;
-    margin: 20px 0px 0px 50px;
-    width: 70vw;
+    margin: 20px 0px 0px 20px;
+    width: 90vw;
   } 
   .iconRow6 {
     display: flex;
@@ -257,8 +262,8 @@
     margin-top: 3rem; 
     margin-left: 1rem;
     padding: 0px 100px 0px 100px;
-    width: 85vw;
-    height: 9vh;  
+    width: 95vw;
+    height: 10vh;  
   }
   .column1 {
     display: flex;
@@ -298,12 +303,12 @@
     padding-top: 7rem;
   }
   .square {
-    height: 8px;
-    width: 8px;
+    height: 4px;
+    width: 4px;
   }
   .circle {
-    height: 6.5px;
-    width: 6.5px;
+    height: 3.5px;
+    width: 3.5px;
   }
 }
 
@@ -352,7 +357,7 @@
     width: 100vw;
     height: 112vh;
     padding-top: 3rem; 
-    background-color: rgb(212, 206, 245);
+    background-color: rgb(50, 23, 77);
   }
   .iconRow2 {
     display: flex;

@@ -59,7 +59,7 @@
 
 @media only screen and (max-width: 476px) and (min-width: 0px) {
   .mainContainer {
-    height: 110vh;
+    height: 170vh;
   }
   .bulletPoints {
     margin-left: .25rem;

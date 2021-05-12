@@ -10,7 +10,7 @@ export default function Profile() {
     <div className={styles.hero}>
       <div className={styles.container}>
         <h1>David Anthony Carrillo Jr.</h1>
-        <p>I'm a former hospitality professional turned software engineer, and I specialize in full-stack web & mobile development.</p>
+        <p>I'm a software engineer </p>
 
         <section className={styles.sectionContainer && styles.content}>
           <h2>Content One</h2>

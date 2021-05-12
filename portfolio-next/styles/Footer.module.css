@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap');
 
 .footerContainer {
-  background-color: rgb(10, 2, 56);;
+  background-color: rgb(59, 19, 56);;
   bottom: 0;
   left: 0;
   right: 0;
@@ -33,7 +33,7 @@
 
 @media only screen and (max-width: 476px) and (min-width: 0px){
   .footerContainer {
-    background-color: rgb(10, 2, 56);;
+    background-color: rgb(50, 23, 77);;
     bottom: 0;
     left: 0;
     right: 0;
@@ -43,7 +43,7 @@
   .footerTextStyles {
     color: whitesmoke;
     font-family: 'JetBrains Mono', monospace;
-    margin-left: 7rem;
+    margin-left: 5.5rem;
   }
   .footerHeader {
     width: 100vw;

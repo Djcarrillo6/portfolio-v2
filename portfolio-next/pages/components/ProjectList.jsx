@@ -93,8 +93,8 @@ const ProjectList = () => {
     </div>
 
       <div className={styles.myRow2}>
-        <div className={styles.blackBorder}>
-          <div className="card" className={styles.cardWidth}>
+        <div className={styles.blackBorder2}>
+          <div className="card" className={styles.cardWidth2}>
             <Image className="card-img-top"
               src="/sommbook.png"
               alt="SommBook Image"

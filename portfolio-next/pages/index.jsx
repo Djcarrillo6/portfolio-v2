@@ -15,7 +15,6 @@ import angularIcon from '../public/angular.svg';
 import awsIcon from '../public/aws-2.svg';
 import djangoIcon from '../public/django-community.svg';
 import googleCldIcon from '../public/google-cloud-3.svg';
-import herokuIcon from '../public/heroku-1.svg';
 import azureIcon from '../public/microsoft-azure-2.svg';
 import mongoDbIcon from '../public/mongodb.svg';
 import mysqlIcon from '../public/mysql-5.svg';
@@ -40,16 +39,14 @@ export default function Home() {
       < NavBar />
       <div className={styles.container}>
         <div id="home" className={styles.customRow}>
-            <div className={styles.square} ></div>
-            <div className={styles.circle} ></div>
-            <p className={styles.text} >Hi I'm DJ.
-            </p>
+        <p className={styles.text} >Hi, I'm DJ!</p>
             <div className={styles.square} ></div>
             <div className={styles.circle} ></div>
             <div className={styles.square} ></div>
             <div className={styles.circle} ></div>
             <div className={styles.square} ></div>
-            <p className={styles.text}>I design & build web and mobile apps.</p>
+            <div className={styles.circle} ></div>
+            <div className={styles.square} ></div>
             <div className={styles.circle} ></div>
             <div className={styles.square} ></div>
             <div className={styles.circle} ></div>
@@ -58,15 +55,13 @@ export default function Home() {
         <div className={styles.customRow}>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
-          <p className={styles.text} >Former Hospitality Pro</p>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
-          <p className={styles.text} >turned</p>
+          <p className={styles.text} >I design & build web & mobile applications.</p>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
-          <p className={styles.text} >Software Engineer</p>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
         </div>
@@ -74,32 +69,29 @@ export default function Home() {
         <div className={styles.customRow}>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
-          <p className={styles.text} >Economist by education.
-            </p>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
-          <p className={styles.text} >But I prefer programming.
-            </p>
           <div className={styles.square} ></div>
           <div className={styles.circle} ></div>
+          <p className={styles.text} >Take a look, at my most recent apps below!</p>
         </div>
 
         <section className={styles.projectGallery} id="projectGallery">
-          <p className={styles.projectGalleryHeader}>Project Gallery</p>
+          <p className={styles.projectGalleryHeader}>Application Gallery</p>
           <ProjectList />
         </section>
         
           <div className={styles.skillGallery}>
-            <p className={styles.techSkillHeader} style={{color: 'purple'}}>My Technology Cluster</p>
+            <p className={styles.techSkillHeader}>My Favorite Technologies</p>
                 <div className={styles.iconRow2}>
                       <Image src={pythonIcon}
                         alt="Python"
-                        width={75}
-                        height={75}
+                        width={60}
+                        height={60}
                         />
                         <Image src={typeScrtIcon}
                         alt="Typescript"
@@ -108,8 +100,8 @@ export default function Home() {
                         />
                         <Image src={jsIcon}
                         alt="JavaScript"
-                        width={105}
-                        height={105}
+                        width={75}
+                        height={75}
                         />
                       <Image src={djangoIcon}
                         alt="Django"
@@ -232,7 +224,7 @@ export default function Home() {
         </div>
 
         <section className={styles.contactSection} id="contact-form">
-          <p className={styles.sectionHeader2}>Have an idea you would like to develop?</p>
+          <p className={styles.sectionHeader2}>Web Apps. Mobile Apps. Websites.</p>
           <p className={styles.sectionHeader2}>Do you need something built?</p>
           <p className={styles.sectionHeader2}>Let's Connect.</p>
         </section>

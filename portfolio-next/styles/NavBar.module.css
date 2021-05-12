@@ -2,7 +2,7 @@
 
 .nav {
   position: fixed;
-  background-color: rgb(10, 2, 56);
+  background-color: rgb(50, 23, 77);
   top: 0;
   left: 0;
   right: 0;
@@ -52,7 +52,7 @@
 
 .nav a.current,
 .nav a:hover {
-  color: #c0392b;
+  color: #5fe9ee;
   font-weight: bold;
 }
 
@@ -62,7 +62,8 @@
 /* Small devices (landscape phones, 476px and below) */
 @media only screen and (max-width: 476px) and (min-width: 0px){
   .nav {
-    background-color: rgb(10, 2, 56);
+    position: fixed;
+    background-color: rgb(50, 23, 77);
     top: 0;
     left: 0;
     right: 0;
@@ -96,7 +97,7 @@
 
 @media only screen and (max-width: 769px) and (min-width: 477px) {
   .nav {
-    background-color: rgb(10, 2, 56);
+    background-color: rgb(50, 23, 77);
     top: 0;
     left: 0;
     right: 0;
