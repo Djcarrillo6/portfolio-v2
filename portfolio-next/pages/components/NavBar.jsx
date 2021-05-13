@@ -1,4 +1,5 @@
- import styles from '../../styles/NavBar.module.css'
+import Link from 'next/link';
+import styles from '../../styles/NavBar.module.css'
 
  const NavBar = () => {
 
@@ -8,10 +9,10 @@
         <div className={styles.container}>
           <h1><a href="/">DJ's Portfolio</a></h1>
           <ul>
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#projectGallery">Projects</a></li>
-            <li><a href="/#contact-form">Contact</a></li>
-            <li><a href="/">Blog</a></li>
+            <li><Link href="/#home"><a>Home</a></Link></li>
+            <li><Link href="/#projects"><a>Projects</a></Link></li>
+            <li><Link href="/#contact-form"><a>Contact</a></Link></li>
+            <li><Link href="/"><a>Blog</a></Link></li>
           </ul>
         </div>
       </nav>
