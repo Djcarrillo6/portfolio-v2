@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import NavBar from './components/NavBar';
-import ProjectList from './components/ProjectList';
-import Footer from './components/Footer';
-import ContactForm from './components/ContactForm';
+import NavBar from '../components/NavBar'
+import ProjectList from '../components/ProjectList';
+import Footer from '../components/Footer';
+import ContactForm from '../components/ContactForm';
 import styles from '../styles/Home.module.css'
 
 import Image from 'next/image'
