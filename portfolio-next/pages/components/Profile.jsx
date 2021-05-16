@@ -1,6 +1,6 @@
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import styles from '../styles/profile.module.css';
+import NavBar from './NavBar';
+import Footer from './Footer';
+import styles from '../../styles/Profile.module.css'
 
 
 export default function Profile() {
