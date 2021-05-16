@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import NavBar from './components/NavBar';
-import ProjectList from './components/ProjectList';
-import Footer from './components/Footer';
-import ContactForm from './components/ContactForm';
+import NavBar from '../components/NavBar'
+import ProjectList from '../components/ProjectList';
+import Footer from '../components/Footer';
+import ContactForm from '../components/ContactForm';
 import styles from '../styles/Home.module.css'
 
 import Image from 'next/image'
@@ -32,7 +32,7 @@ export default function Home() {
     <>
       <Head>
         <title>Dj's Portfolio</title>
-        {/* Keyword selection to match technical skill section */}
+        {/* Keyword selection to match technical skills section */}
         <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
       </Head>
       
