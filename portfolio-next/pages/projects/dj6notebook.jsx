@@ -1,6 +1,7 @@
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import styles from '../../styles/project-details-styles.module.css';
+import NextLink from 'next/link';
 
 const  dj6notebook = () => {
   return (
@@ -14,7 +15,7 @@ const  dj6notebook = () => {
           <p className={styles.text} >NPM Module: Dj6-jsnote</p>
 
           <h5 className={styles.sectionHeaderText} >Project Description:</h5> 
-          <p className={styles.text} >I created this web application as an NPM module, which is publically avaiable for use <a style={{textDecoration: 'underline', color: 'purple'}}  href="https://www.npmjs.com/packages/jsnote-dj6">here.</a> This NPM module is a CLI to launch an interactive development environment inside a user's browser, for writing, executing, and documenting code.</p>
+          <p className={styles.text} >I created this web application as an NPM module, which is publically avaiable for use <NextLink href="https://www.npmjs.com/package/jsnote-dj6" passHref><a target='_blank' style={{textDecoration: 'underline', color: 'purple'}}  >here.</a></NextLink> This NPM module is a CLI to launch an interactive development environment inside a user's browser, for writing, executing, and documenting code.</p>
 
                 <div className="col" style={{marginTop: '.5rem'}} >
                   <h5 className={styles.sectionHeaderText}>Technologies Used:</h5>
@@ -56,9 +57,12 @@ const  dj6notebook = () => {
         </div>
 
         <div className={styles.linkRow}>
-          <a target="_blank" href="https://github.com/Djcarrillo6/jsnotebook-dj6"><button style={{marginRight: '2rem', backgroundColor: 'rgb(10, 2, 56)', color: 'white'}}  className="btn">GitHub Repository</button></a>
-          <a target="_blank" href="https://www.npmjs.com/packages/jsnote-dj6"><button
-          style={{backgroundColor: 'rgb(9, 114, 12)', color: 'white'}}  className="btn" >Demo Project</button></a>
+          <NextLink href="https://github.com/Djcarrillo6/jsnotebook-dj6" passHref ><a target="_blank" ><button style={{marginRight: '2rem', backgroundColor: 'rgb(10, 2, 56)', color: 'white'}}  className="btn">GitHub Repository</button></a></NextLink>
+          <NextLink href="https://www.npmjs.com/package/jsnote-dj6" passHref >
+            <a target="_blank"><button
+            style={{backgroundColor: 'rgb(9, 114, 12)', color: 'white'}}  className="btn" >Demo Project</button>
+            </a>
+          </NextLink>
         </div>
 
       </div>

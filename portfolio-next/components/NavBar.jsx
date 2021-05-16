@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import NextLink from 'next/link';
 import styles from '../styles/NavBar.module.css'
 
  const NavBar = () => {
@@ -9,10 +9,10 @@ import styles from '../styles/NavBar.module.css'
         <div className={styles.container}>
           <h1><a href="/">DJ's Portfolio</a></h1>
           <ul>
-            <li><Link href="/#home"><a>Home</a></Link></li>
-            <li><Link href="/#projectGallery"><a>Projects</a></Link></li>
-            <li><Link href="/#contact-form"><a>Contact</a></Link></li>
-            <li><Link href="https://mdx-remote-blog.vercel.app/"><a>Blog</a></Link></li>
+            <li><NextLink href="/#home" passHref><a>Home</a></NextLink></li>
+            <li><NextLink href="/#projectGallery" passHref><a>Projects</a></NextLink></li>
+            <li><NextLink href="/#contact-form" passHref><a>Contact</a></NextLink></li>
+            <li><NextLink href="https://mdx-remote-blog.vercel.app/" passHref><a>Blog</a></NextLink></li>
           </ul>
         </div>
       </nav>
