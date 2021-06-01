@@ -1,4 +1,5 @@
 import styles from '../styles/ProjectList.module.css';
+import NextLink from 'next/link'
 import Image from 'next/image'
 
 const ProjectList = () => {
@@ -28,7 +29,7 @@ const ProjectList = () => {
               <div className="card-body">
                 <div className={styles.cardLinks}>
                   <a href="/projects/dj6notebook" className="btn btn-primary">Details</a>
-                  <a href="https://www.npmjs.com/package/jsnote-dj6" className="btn btn-success">Demo</a>
+                  <NextLink href="https://www.npmjs.com/package/jsnote-dj6" passHref ><a className="btn btn-success">Demo</a></NextLink>
                 </div>
               </div>
           </div>
@@ -55,8 +56,8 @@ const ProjectList = () => {
               </ul>
               <div className="card-body">
                 <div className={styles.cardLinks}>
-                  <a href="/projects/ecommerce-django" className="btn btn-primary">Details</a>
-                  <a href="https://python-cfe-ecoomerce.herokuapp.com/" className="btn btn-success">Demo</a>
+                <NextLink href="/projects/ecommerce-django" passHref ><a className="btn btn-success">Details</a></NextLink>
+                <NextLink href="https://python-cfe-ecoomerce.herokuapp.com/" passHref ><a className="btn btn-primary">Demo</a></NextLink>
                 </div>
               </div>
           </div>
@@ -83,10 +84,10 @@ const ProjectList = () => {
             <li className="list-group-item">- MongoDB</li>
           </ul>
           <div className="card-body">
-            <dic className={styles.cardLinks}>
-              <a href="/projects/rezzshop" className="btn btn-primary">Details</a>
-              <a href="https://rezzshopapp.herokuapp.com/" className="btn btn-success">Demo</a>
-            </dic>
+            <div className={styles.cardLinks}>
+            <NextLink href="/projects/rezzshop" passHref ><a className="btn btn-success">Details</a></NextLink>
+                <NextLink href="https://rezzshopapp.herokuapp.com/" passHref ><a className="btn btn-primary">Demo</a></NextLink>
+            </div>
           </div>
         </div>
       </div>
@@ -114,8 +115,8 @@ const ProjectList = () => {
             </ul>
             <div className="card-body">
               <div className={styles.cardLinks} >
-                <a href="/projects/sommbook" className="btn btn-primary">Details</a>
-                <a href="#" className="btn btn-success">Demo</a>
+              <NextLink href="/projects/sommbook" passHref ><a className="btn btn-success">Details</a></NextLink>
+                <NextLink href="https://github.com/Djcarrillo6/SommBook_v1" passHref ><a className="btn btn-warning">GitHub</a></NextLink>
               </div>
             </div>
           </div>

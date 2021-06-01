@@ -1,5 +1,6 @@
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
+import NextLink from 'next/link';
 import styles from '../../styles/project-details-styles.module.css';
 
 
@@ -38,7 +39,7 @@ export default function sommbook() {
         </div>
 
         <div className={styles.linkRow}>
-          <a target="_blank" href="https://github.com/Djcarrillo6/SommBook_v1"><button style={{marginRight: '2rem', backgroundColor: 'rgb(10, 2, 56)', color: 'white'}}  className="btn">GitHub Repository</button></a>
+          <NextLink href="https://github.com/Djcarrillo6/SommBook_v1" passHref><a target="_blank"><button style={{marginRight: '2rem', backgroundColor: 'rgb(10, 2, 56)', color: 'white'}}  className="btn">GitHub Repository</button></a></NextLink>
         </div>
 
       </div>

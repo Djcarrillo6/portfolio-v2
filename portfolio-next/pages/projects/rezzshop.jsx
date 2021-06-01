@@ -1,6 +1,7 @@
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import styles from '../../styles/project-details-styles.module.css';
+import NextLink from 'next/link';
 
 export default function rezzshop() {
   return (
@@ -50,9 +51,11 @@ export default function rezzshop() {
         </div>
 
         <div className={styles.linkRow}>
-          <a target="_blank" href="https://github.com/Djcarrillo6/eCommerce"><button style={{marginRight: '2rem', backgroundColor: 'rgb(10, 2, 56)', color: 'white'}}  className="btn">GitHub Repository</button></a>
-          <a target="_blank" href="https://rezzshopapp.herokuapp.com/"><button
-          style={{backgroundColor: 'rgb(9, 114, 12)', color: 'white'}}  className="btn" >Demo Project</button></a>
+          <NextLink href="https://github.com/Djcarrillo6/eCommerce" passHref><a target="_blank"><button style={{marginRight: '2rem', backgroundColor: 'rgb(10, 2, 56)', color: 'white'}}  className="btn">GitHub Repository</button></a></NextLink>
+          <NextLink href="https://rezzshopapp.herokuapp.com/" passHref >
+            <a target="_blank"><button
+            style={{backgroundColor: 'rgb(9, 114, 12)', color: 'white'}}  className="btn" >Demo Project</button></a>
+          </NextLink>
         </div>
 
       </div>

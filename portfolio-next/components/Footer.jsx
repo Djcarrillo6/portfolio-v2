@@ -1,11 +1,10 @@
-import styles from '../styles/Footer.module.css';
 import { 
   FaLinkedin,
-  FaTwitter,
-  FaEnvelopeOpenText
+  FaTwitter
 }  from 'react-icons/fa'
 import { VscGithub } from "react-icons/vsc";
 import { IconContext } from "react-icons"
+import styles from '../styles/Footer.module.css';
 
 
 export default function Footer() {
