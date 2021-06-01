@@ -1,7 +1,6 @@
 import { 
   FaLinkedin,
-  FaTwitter,
-  FaEnvelopeOpenText
+  FaTwitter
 }  from 'react-icons/fa'
 import { VscGithub } from "react-icons/vsc";
 import { IconContext } from "react-icons"
