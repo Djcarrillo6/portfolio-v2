@@ -89,9 +89,7 @@ export default function Home() {
 				</section>
 
 				<div className={styles.skillGallery}>
-					<p className={styles.techSkillHeader}>
-						My Favorite Technologiesdfsdfsadfsad
-					</p>
+					<p className={styles.techSkillHeader}>My Favorite Technologies</p>
 					<div className={styles.iconRow2}>
 						<Image src={pythonIcon} alt='Python' width={60} height={60} />
 						<Image src={typeScrtIcon} alt='Typescript' width={40} height={40} />
