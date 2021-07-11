@@ -26,7 +26,7 @@ const NavBar = () => {
 					</li>
 					<li>
 						<NextLink
-							href='https://mdx-remote-blog-mm0xvyge4-djcarrillo6.vercel.app/'
+							href='https://vercel.com/djcarrillo6/mdx-remote-blog/DKyiFUz3bDUtnRuiCiHnkKrJfnXD'
 							passHref>
 							<a>Blog</a>
 						</NextLink>
