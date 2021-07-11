@@ -129,11 +129,6 @@ export default function Home() {
 					</div>
 
 					<div className={styles.iconRow4}>
-						{/* <Image src={herokuIcon}
-                        alt="Heroku"
-                        width={100}
-                        height={100}
-                        /> */}
 						<Image src={awsIcon} alt='AWS' width={100} height={100} />
 						<Image
 							src={googleCldIcon}
@@ -141,7 +136,7 @@ export default function Home() {
 							width={115}
 							height={115}
 						/>
-						<Image src={azureIcon} alt='Azure Cloud' width={115} height={115} />
+						{/* <Image src={azureIcon} alt='Azure Cloud' width={115} height={115} /> */}
 					</div>
 
 					<div className={styles.iconRow5}>
